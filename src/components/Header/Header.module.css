@@ -1,0 +1,61 @@
+.header {
+    position: fixed;
+    z-index: 100;
+    
+    width: 100%;
+    top: 65px;
+    height: 105px;
+    transition: all .35s ease-in-out;
+}
+
+.cont {
+    height: 100%;
+    padding: 10PX 0 ;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    
+}
+
+.link {
+    font-family: 'Pilat Extended';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: .8;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.listNav {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 40px;
+    align-items: center;
+}
+
+.blockNavSocial {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap:35px;
+}
+
+.socialBlocki {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap:35px ;
+    align-items: center;
+}
+
+.blockNavSocial {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}

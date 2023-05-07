@@ -1,0 +1,80 @@
+
+
+.content {
+    position: relative;
+    min-height: 600px;
+
+}
+
+.blockL, .blockR {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 535px;
+    height: 456px;
+    background-color: #FBF4DD;border-radius: 30px;
+}
+
+.blockR {
+    right: 0;
+    left: auto;
+}
+
+.imgL, .imgR {
+    position: absolute;
+    bottom: 0;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.textImgs {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+.imgL {
+    width: 432px;
+    height: 432px;
+    left: 50px;
+    bottom: 10px;
+    right: auto;
+    z-index: 5;
+    background-image: url('./../../assets/moneyToken.png');
+}
+
+.imgR {
+    width: 500px;
+    height: 420px;
+    right: 0;
+    bottom: -0px;
+    left: auto;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    background-size: cover;
+
+    z-index: 5;
+    background-image: url('./../../assets/svinToken.png');
+}
+
+.textBlock {
+    width: 741px;
+height: 359px;
+z-index: 4;
+padding: 40px 48px;
+box-sizing: border-box;
+background: #FBE288;
+box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}
+
+.text {
+    
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+
+color: #000000;
+}

@@ -1,0 +1,124 @@
+
+.section {
+    display: block;
+    margin-top: 115px;
+}
+
+.cont {
+    position: relative;
+}
+
+.content {
+    min-height: 1150px;
+
+}
+
+.airdrop {
+    position: absolute;
+    top: -170px;
+    left: 650px;
+    display: block;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./../../assets/airdrop-mini.png');
+    width: 368px;
+    height: 368px;
+}
+
+.back {
+    position: absolute;
+   bottom: 0;
+   left: 0;
+    display: block;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./../../assets/roadmap-back.png');
+    width: 93%;
+    height: 105%;
+
+}
+
+.cards {
+    height: 100%;
+    display: grid;
+    height: max-content;
+    min-height: 1100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 91px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+   
+   display: grid;
+    height: 100%;
+}
+
+
+.itemContent {
+    display: flex;
+    justify-content: center;
+    min-height: 712px;
+    position: relative;
+}
+
+.top {
+    width: 371px;
+height: 456px;
+padding: 65px 35px;
+text-align: center;
+background-color: #FFFFFF;
+border-radius: 30px;
+
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+height: 456px;
+padding: 71px 41px;
+background: #FBF4DD;
+box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
+border-radius: 30px;;
+}
+
+.cardTitle {
+    
+font-family: 'Pilat Extended';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 62px;
+text-align: center;
+
+color: #000000;
+}
+
+.cardDescr {
+    font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+}
+
+.topCard {
+    align-self: start;
+    margin-top: 20px;
+}
+
+.midCard {
+    align-self: center;
+}
+
+.bottomCard { 
+    align-self: end;
+}
