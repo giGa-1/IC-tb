@@ -43,8 +43,7 @@ export default function About() {
             <div className={cl.listBlocks}>
                 <div className={cl.blockLeft}>
                     <p className={cl.descr}>
-                    Pepe is tired of watching everyone play hot potato with the endless derivative ShibaCumGMElonKishuTurboAssFlokiMoon Inu coins. The Inu’s have had their day. It’s time for the most recognizable meme in the world to take his reign as king of the memes.<br/><br/><br/>
-                    Pepe is here to make memecoins great again. Launched stealth with no presale, zero taxes, LP burnt and contract renounced, $PEPE is a coin for the people, forever. Fueled by pure memetic power, let $PEPE show you the way.
+                    Say hello to $OINK - the super fun meme coin that's taking the Crypto and NFT world by storm! Join our Piggy-inspired squad and get ready for a crazy adventure with this limited supply token. With tons of silly memes and cool tech, $OINK is perfect for anyone who loves to have fun. So come hang out with us and be a part of the $OINK family - it's time to get wild and have some laughs!
                     </p>
                 </div>
                 <div className={cl.rightBlock}>

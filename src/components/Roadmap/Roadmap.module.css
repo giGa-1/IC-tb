@@ -95,13 +95,16 @@ color: #000000;
 }
 
 .cardDescr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Helvetica';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-
-color: #000000;
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
 }
 
 .topCard {
@@ -126,6 +129,18 @@ color: #000000;
 }
 .swiperC {
     display: none;
+}
+
+.cardTitleB {
+        
+font-family: 'Pilat Extended Bold';
+font-style: normal;
+font-weight: 900;
+font-size: 54px;
+line-height: 62px;
+text-align: center;
+
+color: #000000;
 }
 @media (max-width:576px) {
     
@@ -199,5 +214,17 @@ color: #000000;
     box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
     border-radius: 30px;;
     }
+
+    .cardTitleB {
+        
+        font-family: 'Pilat Extended Bold';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 62px;
+        text-align: center;
+        
+        color: #000000;
+        }
 
 }

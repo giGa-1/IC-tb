@@ -61,28 +61,36 @@ transition: all .6s ease-in-out;
     width: 741px;
 height: 359px;
 z-index: 4;
-padding: 40px 48px;
+padding: 45px 40px;
 box-sizing: border-box;
 background: #FBE288;
 box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
 border-radius: 30px;
 transition: all .6s ease-in-out;
-
 }
 
 .text {
-    
 font-family: 'Helvetica';
 font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 24px;
-
+font-size: 18px;
+letter-spacing: 1.5px;
+line-height: 36px;
+text-align: center;
 color: #000000;
 }
 .title {
     background-color: #ffffff00;
     transition: all .6s ease-in-out;
+}
+.copy {
+    cursor: pointer;
+}
+.copy:hover {
+    background-color: #45454540;
+}
+
+.copy:focus, .copy:active {
+    outline: 2px solid #000;
 }
 .conetntM {
     display: none;
@@ -128,8 +136,9 @@ color: #000000;
         font-family: 'Helvetica';
 font-style: normal;
 font-weight: 700;
-font-size: 28px;
-line-height: 32px;
+font-size: 26px;
+text-align: center;
+line-height: 35px;
 
 color: #000000;
     }

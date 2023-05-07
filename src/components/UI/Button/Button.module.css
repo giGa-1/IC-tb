@@ -2,6 +2,7 @@
     border: 4px solid #FBE8A3 !important; 
     border-radius: 31px !important;
     display: flex;
+    text-decoration: none;
     width: 142px;
 height: 54px;
     justify-content: center;

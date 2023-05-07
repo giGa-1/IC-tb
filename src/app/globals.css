@@ -359,7 +359,16 @@ template {
 @font-face {
   font-family:  'Pilat Extended';
   src: url('../assets/fonts/PilatExtended-Regular.ttf');
+
 }
+
+@font-face {
+  font-family:  'Pilat Extended Bold';
+  src: url('../assets/fonts/PilatExtended-Bold.ttf');
+
+  font-weight: 900;
+}
+
 
 
 :root {
@@ -380,11 +389,25 @@ template {
 
 body {
   font-family: 'Helvetica';
+  overflow-x: hidden;
   background-color: var(--dark);
   font-weight: normal;
 }
 
 
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1E1E1E;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FBE288;
+  border-radius: 5px;
+}
 .container {
   display: block;
   max-width: 1550px;
@@ -434,3 +457,7 @@ ul {
   list-style: none;
 }
 
+
+a {
+  text-decoration: none !important;
+}

@@ -55,6 +55,10 @@ line-height: 23px;
 color: #000000;
 }
 
+.itemM {
+    display: none;
+}
+
 
 @media (max-width:576px) {
     .section {
@@ -90,6 +94,9 @@ color: #000000;
         line-height: 16px;
         
         color: #000000;
+    }
+    .itemM {
+        display: block;
     }
     .itemImg {
         background-color: #FBF4DD;

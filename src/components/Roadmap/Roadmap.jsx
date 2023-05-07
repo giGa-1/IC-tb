@@ -8,14 +8,38 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { replacerComments } from '@/untils/Replacer';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Roadmap() {
 
     const stateCards = [
-        {id:1, name: 'Phase ONE', content: 'To Be announced...', color: 'FBF4DD',class: cl.topCard},
-        {id:2, name: 'Phase TWO', content: 'To Be announced...',color: 'FBEEBF',class: cl.midCard},
-        {id:3, name: 'Phase THREE', content: 'To Be announced...',color: 'FBE288',class: cl.bottomCard},
+        {
+            id:1,
+            name: 'Step ONE',
+            content: 'WEN',
+            text:'',
+            color: 'FBF4DD',
+            class: cl.topCard
+        },
+        {
+            id:2,
+            name: 'Step TWO', 
+            content: 'CEX',
+            text:'',
+
+            color: 'FBEEBF',
+            class: cl.midCard
+        },
+        {
+            id:3, 
+            name: 'Step THREE', 
+            content: 'LISTING?',
+            color: 'FBE288',
+            text:'',
+
+            class: cl.bottomCard
+        },
 
     ]
 
@@ -88,7 +112,11 @@ export default function Roadmap() {
                                             <div className={cl.cardTitle}>{card.name}</div>
                                         </div>
                                         <div className={cl.bottom} style={{background: `#${card.color}`}}>
-                                            <div className={cl.cardDescr}>{card.content}</div>
+                                            <div className={cl.cardDescr}>
+                                                <div className={cl.cardTitleB}>{card.content}</div>
+                                                {replacerComments(card.text, '__', <br/>)
+                                                
+                                            }</div>
                                         </div>
                                     </div>
                                   
@@ -115,7 +143,11 @@ export default function Roadmap() {
                                             <div className={cl.cardTitle}>{card.name}</div>
                                         </div>
                                         <div className={cl.bottom} style={{background: `#${card.color}`}}>
-                                            <div className={cl.cardDescr}>{card.content}</div>
+                                        <div className={cl.cardDescr}>
+                                                <div className={cl.cardTitleB}>{card.content}</div>
+                                                {replacerComments(card.text, '__', <br/>)
+                                                
+                                            }</div>
                                         </div>
                                     </div>
                                   

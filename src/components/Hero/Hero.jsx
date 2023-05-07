@@ -49,7 +49,7 @@ export default function Hero() {
 
 
   return (
-    <section ref={sectionRef} className={cl.section}>
+    <section id='home' ref={sectionRef} className={cl.section}>
 
         <div ref={cont} className={["container", cl.cont].join` `}>
           <Image src={'/img/airdrop.png'} className={cl.airdrop} width={520} height={430}/>

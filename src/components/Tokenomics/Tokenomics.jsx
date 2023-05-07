@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useRef } from 'react'
 
 import cl from './Tokenomics.module.css'
 import Image from 'next/image'
-
+import { CopyToClipboard } from "react-copy-to-clipboard"; 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -108,6 +108,9 @@ export default function Tokenomics() {
 
   },[])
 
+  const handleCopyTexst = (e, text) => {
+  }
+
   return (
     <section id='token' ref={sectionRef} className={cl.section}>
         <div className="container">
@@ -121,21 +124,76 @@ export default function Tokenomics() {
                   
                   <div className={cl.textBlock}>
                       <div className={cl.text}>
-                        <strong>Introducing our Meme Coin with a total supply of 21 billion tokens:</strong>
-                        <br/>
-                        <br/>
-                        <strong>Airdrop (1.5%): 315M tokens </strong>for promotion and engagement.
-                        <strong>Circulating Supply (15%): 3.15B tokens</strong>for trading on DEX/CEX.
-                        <strong> 3 Phase Burn (60%): 12.6B tokens </strong>  burned over time for scarcity.
-                        <strong>Oink Vault (15%): 3.15B tokens</strong> for liquidity on CEX.
-                        <strong>JiggyPool (8.5%): 1.785B tokens</strong> for staking rewards for JiggyPiggy NFT Collection
-                        <br/>
-                        <br/>
-                        <br/>
-                        <strong>
-                          Join our community, trade, stake, and grow with us!
-                        </strong>
+                           <strong>Max Supply </strong>             
+                       21,000,000,000.00 
+                       <strong> Burned Amount </strong>             
+
+                       12,600,000,000.00 
+                      <br/>
+                      <strong>Total Supply </strong>             
+
+                       8,400,000,000.00 
+                      <strong> Circulating Supply </strong>             
+
+                       4,650,000,000.00 
+                       <strong> Oink Vault 1 </strong>             
+
+                          1,000,000,000.00 
+                          
+                          <CopyToClipboard
+                            text={`2FnB4SZyvHNenAPn6zCxDUkVA6HKxLp6vr4pog8aX4QV`}
+                          
+                          >
+                            <strong className={cl.copy} onClick={e=>handleCopyTexst(e,`2FnB4SZyvHNenAPn6zCxDUkVA6HKxLp6vr4pog8aX4QV`)}> {`2FnB4SZyvHNenAPn6zCxDUkVA6HKxLp6vr4pog8aX4QV`.slice(0, 15)}...</strong>
+                           </CopyToClipboard>
+                          <br/>
+                      
+                       <strong> Oink Vault 2 </strong>             
+
+                         600,000,000.00 
+                         <CopyToClipboard
+                            text={`38h6MwEpJEfj8uMhpxrZjAuexZWPF6BWgkb8t8VooAXC`}
+                          
+                          >
+                         <strong className={cl.copy} onClick={e=>handleCopyTexst(e,`38h6MwEpJEfj8uMhpxrZjAuexZWPF6BWgkb8t8VooAXC`)}> {`38h6MwEpJEfj8uMhpxrZjAuexZWPF6BWgkb8t8VooAXC`.slice(0, 15)}...</strong>
+                           
+                           </CopyToClipboard>
+                         <br/>
+                      
+                       <strong> Oink Vault 3 </strong>             
+
+                         1,000,000,000.00 
+                         <CopyToClipboard
+                            text={`DDCQkuuyDuzHdztdKCmC5ma2NmXFnh4xSJeAcawVLoRS`}
+                          
+                          >
+                                                    <strong className={cl.copy} onClick={e=>handleCopyTexst(e,`DDCQkuuyDuzHdztdKCmC5ma2NmXFnh4xSJeAcawVLoRS`)}> {`DDCQkuuyDuzHdztdKCmC5ma2NmXFnh4xSJeAcawVLoRS`.slice(0, 15)}...</strong>
+
+                           </CopyToClipboard>
+                         <br/>
+                       <strong> Oink Vault 4 </strong>             
+
+                         1,150,000,000.00 
+                         <CopyToClipboard
+                            text={`2aYHubRPAQ231W9Vcr5T5MDDW73Gr5dFY3bunzZfFsz1`}
+                          
+                          >
+                                                    <strong className={cl.copy} onClick={e=>handleCopyTexst(e, `2aYHubRPAQ231W9Vcr5T5MDDW73Gr5dFY3bunzZfFsz1`)} > {`2aYHubRPAQ231W9Vcr5T5MDDW73Gr5dFY3bunzZfFsz1`.slice(0, 15)}...</strong>
+
+                           </CopyToClipboard>
+                         <br/>
+                         
+                         <strong> JiggyPiggies NFT Pool </strong>             
+                        1,150,000,000.00 
+                        <CopyToClipboard
+                            text={`GJyxZfSZxzuoAwhsbP6A8i7F7LmJWTstiGRwESVzEhpY`}
+                          
+                          >
+                    <strong className={cl.copy} onClick={e=>handleCopyTexst(e, `GJyxZfSZxzuoAwhsbP6A8i7F7LmJWTstiGRwESVzEhpY`)}> {`GJyxZfSZxzuoAwhsbP6A8i7F7LmJWTstiGRwESVzEhpY`.slice(0, 15)}...</strong>
+
+                           </CopyToClipboard>
                       </div>
+                    
                   </div>
                 </div>
             </div>
@@ -144,22 +202,58 @@ export default function Tokenomics() {
              <div className={cl.leftimg}></div>
 
                 <div className={cl.textL}>
-                        <strong>Airdrop (1.5%): 315M tokens </strong>for promotion and engagement.
-                        <strong>Circulating Supply (15%): 3.15B tokens</strong>for trading on DEX/CEX.
-                        <strong> 3 Phase Burn (60%): 12.6B tokens </strong>  burned over time for scarcity.
-                        <strong>Oink Vault (15%): 3.15B tokens</strong> for liquidity on CEX.
-                        <strong>JiggyPool (8.5%): 1.785B tokens</strong> for staking rewards for JiggyPiggy NFT Collection
-                        <br/>
-                        <br/>
+                  <strong>Max Supply </strong>
+                   21 Bil
+                  <br/>
+                  <br/>
+                  <strong>Burned Amount </strong>
+
+                   12.6 Bil
+                  <br/>
+                  <br/>
+                  <strong>Total Supply </strong>
+
+                   8.4 Bil
+                  <br/>
+                  <br/>
+                  <strong>Circ. Supply </strong>
+
+                  4.6 Bil
+                  <br/>
+                  <br/>
+                  <strong>Oink Vault 1 </strong>
+
+                 - 1 Bil
+                  <br/>
+                  <br/>
+                  <strong>Oink Vault 2 </strong>
+
+                 - 0.6 Bil
+                  <br/>
+                  <br/>
+                  <strong>Oink Vault 3 </strong>
+
+                  - 0.3 Bil
+                  <br/>
+                  <br/>
+                  <strong>Oink Vault 4 </strong>
+
+                  - 1.15 Bi
+                  <br/>
+                  <br/>
+                  <br/>
+
+
                         <strong>
-                          Join our community, trade, stake, and grow with us!
+                          Full Details on Web Version!
                         </strong>
                 </div>
               </div>
               <div className={cl.rightB}>
                   <strong className={cl.textR}>
-                    Introducing our Meme Coin with a total supply of 21 billion tokens
-                  </strong>
+                    <Image src={'/img/ill 2.png'} width={300} height={350}/>
+                    </strong>
+                  
               <div className={cl.rightimg}></div>
 
               </div>
