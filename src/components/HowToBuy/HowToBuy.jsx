@@ -1,5 +1,6 @@
 import React from 'react'
 import cl from './HowToBuy.module.css'
+import Image from 'next/image'
 
 export default function HowToBuy() {
 
@@ -15,7 +16,7 @@ export default function HowToBuy() {
             <h2 className={['title', cl.title].join` `}>How to buy</h2>
 
             <div className={cl.content}>
-                <div className={cl.svin}></div>
+                <Image src={'/img/how-to-svin.jpg'} height={708} width={600} className={cl.svin}/>
                 <ul className={cl.list}>
                     {stateTexts.map(item => {
                         return (

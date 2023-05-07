@@ -1,5 +1,6 @@
 import React from 'react'
 import cl from './Roadmap.module.css'
+import Image from 'next/image'
 
 export default function Roadmap() {
 
@@ -16,7 +17,7 @@ export default function Roadmap() {
 
             <div className={cl.content}>
                 <div className={cl.back}></div>
-                <div className={cl.airdrop}></div>
+                <Image src={'/img/airdrop-mini.png'} height={368}  width={368} className={cl.airdrop}/>
                 <ul className={cl.cards}>
                     {stateCards.map(card => {
                         return (

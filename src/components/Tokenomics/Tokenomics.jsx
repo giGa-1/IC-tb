@@ -1,5 +1,6 @@
 import React from 'react'
 import cl from './Tokenomics.module.css'
+import Image from 'next/image'
 
 export default function Tokenomics() {
   return (
@@ -10,8 +11,9 @@ export default function Tokenomics() {
                 <div className={cl.blockL}></div>
                 <div className={cl.blockR}></div>
                 <div className={cl.textImgs}>
-                  <div className={cl.imgL}></div>
-                  <div className={cl.imgR}></div>
+                  <Image src={'/img/moneyToken.png'}  width={432} height={432} className={cl.imgL} />
+                  <Image src={'/img/svinToken.png'} width={500} height={420} className={cl.imgR} />
+                  
                   <div className={cl.textBlock}>
                       <div className={cl.text}>
                         <strong>Introducing our Meme Coin with a total supply of 21 billion tokens:</strong>

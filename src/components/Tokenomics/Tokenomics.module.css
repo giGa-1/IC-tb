@@ -34,18 +34,13 @@
     height: 100%;
 }
 .imgL {
-    width: 432px;
-    height: 432px;
     left: 50px;
     bottom: 10px;
     right: auto;
     z-index: 5;
-    background-image: url('./../../assets/moneyToken.png');
 }
 
 .imgR {
-    width: 500px;
-    height: 420px;
     right: 0;
     bottom: -0px;
     left: auto;
@@ -54,7 +49,6 @@
     background-size: cover;
 
     z-index: 5;
-    background-image: url('./../../assets/svinToken.png');
 }
 
 .textBlock {

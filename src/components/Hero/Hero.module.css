@@ -1,12 +1,7 @@
 
 
 .scene {
-    width: 100%;
-    height: 551px;
-   background-position: center center;
-   background-size: contain;
-   background-repeat: no-repeat;
-    background-image: url('../../assets/hero-desk.png');
+
 }
 
 
@@ -16,14 +11,11 @@
 
 .airdrop {
     position: absolute;
-    top: -160px;
+    top: -130px;
 transform: translateX(0px);
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-     background-image: url('../../assets/airdrop.png');
-     width: 447px;
-height: 447px;
+ 
+   
+  
 }
 
 .cont {

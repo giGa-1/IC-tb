@@ -19,12 +19,6 @@
     left: 650px;
     display: block;
 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('./../../assets/airdrop-mini.png');
-    width: 368px;
-    height: 368px;
 }
 
 .back {
