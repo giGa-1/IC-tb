@@ -14,6 +14,20 @@ border-radius: 30px;
 padding: 70px 73px 61px;
 }
 
+.title {
+  animation: titleD alternate .6s ease-in-out forwards;
+}
+
+@keyframes titleD {
+  0%{
+  transform: translateX(-50px);
+opacity: 0;
+  } 100% {
+      opacity: 1;
+      transform: none;
+  }
+}
+
 .descr {
     font-family: 'Helvetica';
     font-style: normal;
@@ -28,8 +42,81 @@ padding: 70px 73px 61px;
     justify-content: center;
     background-color: #FBF4DD;
     border-radius: 30px;
+    animation: rightD alternate .6s ease-in-out forwards;
+  }
+
+  .blockLeft {
+    animation: leftD alternate .6s ease-in-out forwards;
+
   }
 
   .section {
     padding-bottom: 115px;
   }
+
+  @keyframes leftD {
+    0%{
+    transform: translateX(-100px);
+  opacity: 0;
+    } 100% {
+        opacity: 1;
+        transform: none;
+    }
+  }
+
+  @keyframes rightD {
+    0%{
+    transform: translateX(100px);
+  opacity: 0;
+    } 100% {
+        opacity: 1;
+        transform: none;
+    }
+  }
+
+
+  @media (max-width:576px) {
+      .listBlocks {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+      } 
+
+      .blockLeft {
+        width: 100%;
+        border: 4px solid #FBE8A3;
+        border-radius: 30px;
+        padding: 29px 20px;
+        }
+         .descr {
+          font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #FFFFFF;
+         }
+      .section {
+        margin-top: 30px;
+        padding-bottom: 60px;
+      }
+      .rigthD {
+        display: none;
+      }
+  
+      .rightImg {
+        min-height: 101px;
+        width: 100%;
+        background-position:center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-image: url('./../../assets/mini-pig.png'); 
+      }
+      
+    }
+

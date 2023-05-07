@@ -1,6 +1,11 @@
-import React from 'react'
+'use client'
+import React, { useLayoutEffect, useRef } from 'react'
 import cl from './HowToBuy.module.css'
 import Image from 'next/image'
+
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function HowToBuy() {
 
@@ -10,8 +15,71 @@ export default function HowToBuy() {
         {id:3,color:'FBE7A6' ,title: 'Go to Raydium', text: "Connect to Raydium. Go to app.uniswap.org in google chrome or on the browser inside your Metamask app. Connect your wallet. Paste the $PEPE token address into Uniswap, select Pepe, and confirm. When Metamask prompts you for a wallet signature, sign."},
         {id:4,color:'FBE288', title: 'Switch SOL for $IONK', text: "Switch ETH for $OINK. We have ZERO taxes so you don’t need to worry about buying with a specific slippage, although you may need to use slippage during times of market volatility."},
     ]
+
+
+    
+    const sectionRef = useRef(null); 
+
+    useLayoutEffect(()=>{
+      const comp = sectionRef.current;
+  
+  
+      gsap.fromTo(comp.querySelector(`.${cl.title}`),{x:-50, opacity:0}, {
+        x: 0, opacity:1,  ease:true,
+        smoothOrigin:true,
+        scrollTrigger:  {
+          trigger: comp.querySelector(`.${cl.title}`),
+          markers:false,
+          end: `top ${window.innerHeight/100*85}px`,
+          start: `bottom ${window.innerHeight/100*85}px`,
+          scrub: true
+        }
+      })
+
+
+
+
+
+
+      const a = [...comp.querySelectorAll(`.${cl.item}`)].map(item => {
+
+        gsap.fromTo(item,{x:-100, opacity:0}, {
+            x: 0, opacity:1,  ease:true,
+            smoothOrigin:true,
+            scrollTrigger:  {
+              trigger: item,
+              markers:false,
+              end: `top ${window.innerHeight/100*100}px`,
+              start: `bottom ${window.innerHeight/100*100}px`,
+              scrub: true
+            }
+          })
+      })
+
+
+
+      gsap.fromTo(comp.querySelector(`.${cl.title}`),{x:-50, opacity:0}, {
+        x: 0, opacity:1,  ease:true,
+        smoothOrigin:true,
+        scrollTrigger:  {
+          trigger: comp.querySelector(`.${cl.title}`),
+          markers:false,
+          end: `top ${window.innerHeight/100*85}px`,
+          start: `bottom ${window.innerHeight/100*85}px`,
+          scrub: true
+        }
+      })
+
+
+    
+
+  
+    },[])
+
+
+
   return (
-    <section className={cl.section}>
+    <section id='how' ref={sectionRef} className={cl.section}>
         <div className="container">
             <h2 className={['title', cl.title].join` `}>How to buy</h2>
 
@@ -32,6 +100,9 @@ export default function HowToBuy() {
                             </React.Fragment>
                         )
                     })}
+                    <li className={cl.itemM}>
+                        <div className={cl.itemImg}></div>
+                    </li>
                 </ul>
             </div>
         </div>

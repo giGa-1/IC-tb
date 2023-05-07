@@ -386,6 +386,7 @@ body {
 
 
 .container {
+  display: block;
   max-width: 1550px;
   padding: 0 15px;
   box-sizing: border-box;
@@ -404,6 +405,18 @@ main {
   line-height: 62px;
   margin-bottom: 40px;
   color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+    .title{
+      font-family: 'Pilat Extended';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 49px;
+
+color: #FFFFFF;
+    }
 }
 
 

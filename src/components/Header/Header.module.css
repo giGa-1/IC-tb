@@ -7,10 +7,18 @@
     height: 105px;
     transition: all .35s ease-in-out;
 }
-
+.blockRef {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 30px;
+}
 .cont {
+    transition: all .6s ease-in-out;
     height: 100%;
-    padding: 10PX 0 ;
+    padding-top: 10PX  ;
+    padding-bottom: 10PX  ;
+
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: space-between;
@@ -58,4 +66,39 @@ text-decoration: none;
     display: flex;
     width: 100%;
     align-items: center;
+}
+.contM {
+    display: none;
+ }
+
+@media (max-width: 576px) {
+    .header {
+        position: fixed;
+        z-index: 100;
+        
+        width: 100%;
+        top: 30px;
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        transition: all .35s ease-in-out;
+    }
+    .cont {
+        display: none;
+    } 
+    .contM {
+        width: 100%;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .socialBLockM {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: end;
+        gap: 30px;
+        align-items: center;
+    }
 }

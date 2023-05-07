@@ -13,6 +13,7 @@
     width: 535px;
     height: 456px;
     background-color: #FBF4DD;border-radius: 30px;
+    transition: all .6s ease-in-out;
 }
 
 .blockR {
@@ -38,8 +39,12 @@
     bottom: 10px;
     right: auto;
     z-index: 5;
-}
+transition: all .6s ease-in-out;
 
+}
+.rightB, .leftB {
+    transition: all .6s ease-in-out;
+}
 .imgR {
     right: 0;
     bottom: -0px;
@@ -47,6 +52,7 @@
     border-bottom-right-radius: 30px;
     overflow: hidden;
     background-size: cover;
+    transition: all .6s ease-in-out;
 
     z-index: 5;
 }
@@ -60,6 +66,8 @@ box-sizing: border-box;
 background: #FBE288;
 box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
 border-radius: 30px;
+transition: all .6s ease-in-out;
+
 }
 
 .text {
@@ -71,4 +79,88 @@ font-size: 22px;
 line-height: 24px;
 
 color: #000000;
+}
+.title {
+    background-color: #ffffff00;
+    transition: all .6s ease-in-out;
+}
+.conetntM {
+    display: none;
+}
+
+@media (max-width:576px) {
+    .content {
+        display: none;
+    }
+    .contentM {
+        display: block;
+    }
+    .textL, .textR {
+        height: 381px;
+        max-width: 183px;
+        padding: 23px 14px;
+        background: #FBE288;
+        box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        font-family: 'Helvetica';
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+    }
+
+    .conetntM {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 24px;
+    }
+    .leftB {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        gap: 24px;
+    }
+
+    .textR {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 32px;
+
+color: #000000;
+    }
+    .rightB {
+       
+            display: grid;
+            grid-template-rows: repeat(2, auto);
+            gap: 24px;
+        
+    }
+
+
+    .leftimg {
+
+    }
+    .rightimg,.leftimg {
+        background-color: #FBF4DD;
+        width: 100%;
+        height: 183px;
+        box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        background-image: url('./../../assets/svin-kosmo-mb.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .leftimg {
+        background-image: url('./../../assets/coin-mb.png');
+
+    }
+
+}.contentM {
+    display: none;
 }
