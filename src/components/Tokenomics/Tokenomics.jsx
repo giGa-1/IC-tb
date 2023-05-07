@@ -251,7 +251,7 @@ export default function Tokenomics() {
               </div>
               <div className={cl.rightB}>
                   <strong className={cl.textR}>
-                    <Image src={'/img/ill 2.png'} width={300} height={350}/>
+                    <Image src={'/img/ill 2.png'} width={260} height={320}/>
                     </strong>
                   
               <div className={cl.rightimg}></div>
