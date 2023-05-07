@@ -13,7 +13,7 @@ export default function HowToBuy() {
         {id:1,color:'FBF5E2',  title: 'Create a Wallet', text: "Download phantom, solflare, or any other wallet of your choice."},
         {id:2,color:'FBEEC4' ,title: 'Get Some SOL', text: "Now you need some Solana! You can buy Solana in most wallets or purchase it on another exchange and send it to your new wallet before getting $OINK"},
         {id:3,color:'FBE7A6' ,title: 'Go to Raydium', text: "Go to raydium, connect the wallet of your choice. paste the $OINK contract address."},
-        {id:4,color:'FBE288', title: 'Switch SOL for $IONK', text: "Click swap, to buy $OINK with your SOL. If market conditions are volatile, don't forget to use slippage. Congrats, you are now $OINK Millionaire!"},
+        {id:4,color:'FBE288', title: 'Switch SOL for $OINK', text: "Click swap, to buy $OINK with your SOL. If market conditions are volatile, don't forget to use slippage. Congrats, you are now $OINK Millionaire!"},
     ]
 
 
